@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+int a = 0, b = 1, c, m, n;
+printf("Enter two numbers M and N: ");
+scanf("%d %d", &m, &n);
+printf("Fibonacci series between %d and %d: ", m, n);
+while (b < n)
+{
+if (b >= m)
+{
+printf("%d ", b);
+}
+c = a + b;
+a = b;
+b = c;
+}
+printf("\n");
+return 0;
+}
